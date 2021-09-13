@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <title>Test</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="button">Кликни</div>
+  </div>
+
+  <div class="modal">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Получите набор файлов<br> для руководителя:</h2>
+      <div class="modal__body">
+        <div class="modal__left">
+          <div class="modal__ext">
+            <img class="modal__icon" src="/img/1.png" alt="">
+            <img class="modal__icon" src="/img/2.png" alt="">
+            <img class="modal__icon" src="/img/3.png" alt="">
+            <img class="modal__icon" src="/img/4.png" alt="">
+            <img class="modal__icon" src="/img/5.png" alt="">
+            <img class="modal__icon" src="/img/6.png" alt="">
+            <img class="modal__icon" src="/img/7.png" alt="">
+          </div>
+          <img src="/img/whitebook.png" alt="" class="modal__img-whitebook">
+          <img src="/img/blackbook.png" alt="" class="modal__img-blackbook">
+          <img src="/img/phone.png" alt="" class="modal__img-phone">
+        </div>
+        <div class="modal__rigth">
+          <form action="sandmail.php" method="POST" class="modal__form form">
+            <label for="email" class="form__title">Введите Email для получения файлов:</label>
+            <input type="email" id="email" name="email" class="form__input-email" placeholder="E-mail">
+            <label for="phone" class="form__title">Введите телефон для подтверждения доступа:</label>
+            <input type="text" id="phone" name="phone" class="form__input-phone" placeholder="+7 (000) 000-00-00" required>
+            <button type="submit" class="form__btn">
+              Скачать файлы
+              <img class="form__btn-icon" src="/img/hand.png" alt="">
+            </button>
+            <div class="form__files">
+              <div class="form__file">PDF 4.7 MB</div>
+              <div class="form__file">DOC 0.8 MB</div>
+              <div class="form__file">XLS 1.2 MB</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
